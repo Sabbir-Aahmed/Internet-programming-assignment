@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+<center>
+
+    <!-- Header -->
+    <header>
+        <h1>Md Sabbir Ahmed</h1>
+        <p><strong>Web Developer & Designer</strong></p>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sabbir, a <em>passionate</em> web developer who loves creating <mark>interactive</mark> and <strong>user-friendly</strong> websites.</p>
+        <p>I live at <address>Tongi, Gazipur City Corporation, Dhaka, Bangladesh</address></p>
+        <blockquote>"Code is like humor. When you have to explain it, it’s bad." – Cory House</blockquote>
+        <p>My skills include <code>HTML</code>, <code>CSS</code>, <code>Tailwind CSS</code>, <code>JavaScript</code>, <code>React-JS</code>, <code>Python</code>, and <code>Django</code>.</p>
+        <pre>
+function greet() {
+    console.log("Hello, world!");
+}
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <h3>Website Portfolio</h3>
+        <ul style="list-style-position: inside;">
+            <li>Personal Blog</li>
+            <li>Landing Page for Startup</li>
+            <li>Online Store</li>
+        </ul>
+
+        <h3>Web Applications</h3>
+        <ol style="list-style-position: inside;">
+            <li>Event Management App</li>
+            <li>Vaccination Management System</li>
+            <li>E-Commerce Platform</li>
+        </ol>
+
+        <h3>Project Details</h3>
+        <dl>
+            <dt>Personal Blog</dt>
+            <dd>A responsive blog using HTML, CSS, and JavaScript.</dd>
+            <dt>Event Management App</dt>
+            <dd>Manage event with user authentication and local storage.</dd>
+        </dl>
+
+        <!-- Project Table -->
+        <h3>Project Table</h3>
+        <table border="1" style="margin: 0 auto; border-collapse: collapse; text-align: center;">
+            <caption>My Projects Overview</caption>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Type</th>
+                    <th>Technologies</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Personal Blog</td>
+                    <td>Website</td>
+                    <td>HTML, CSS, JS</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Event Management App</td>
+                    <td>Web App</td>
+                    <td>React, Django</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Vaccination Management System</td>
+                    <td>Web App</td>
+                    <td>Django, Python</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>E-Commerce Platform</td>
+                    <td>Web App</td>
+                    <td>React, Django</td>
+                    <td>Planned</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">All projects are part of my portfolio</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Project Screenshot">
+            <figcaption>Sample Project Screenshot</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Send a Message</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <label for="contact-method">Preferred Contact:</label>
+                <select id="contact-method" name="contact-method">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select><br><br>
+
+                <label for="subscribe">Subscribe to newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Extra Elements -->
+    <section>
+        <h2>Other Elements</h2>
+
+        <details>
+            <summary>Click to see fun fact</summary>
+            I love coding and coffee!
+        </details>
+
+        <dialog open>
+            Welcome to my portfolio!
+        </dialog>
+
+        <p>Completion progress:</p>
+        <progress value="80" max="100"></progress>
+        <br>
+        <meter value="0.6">60%</meter>
+
+        <p>Inline math: <var>x</var> + <var>y</var> = <s>wrong</s> <ins>correct</ins></p>
+
+        <canvas id="canvas" width="100" height="100">
+            Your browser does not support the canvas element.
+        </canvas>
+        <br>
+
+        <iframe src="https://www.example.com" width="300" height="150" title="Example Iframe"></iframe>
+        <br>
+
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+        <br>
+
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 Md Sabbir Ahmed. All rights reserved.</p>
+        <p>Follow me: <a href="https://www.linkedin.com/in/md-sabbir-ahmed/">LinkedIn</a> | <a href="https://github.com/Sabbir-Aahmed">GitHub</a></p>
+    </footer>
+
+    <script>
+        document.write("<p>This text is added using JavaScript.</p>");
+    </script>
+
+</center>
+
+</body>
+</html>
