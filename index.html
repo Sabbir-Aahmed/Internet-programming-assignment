@@ -339,7 +339,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section class="bg-gray-100 dark:bg-gray-800">
       <div id="contact" class="py-16 max-w-6xl mx-auto px-6">
         <h2
@@ -347,29 +347,137 @@
         >
           Contact Me
         </h2>
+
         <form
-          class="bg-white dark:bg-gray-700 shadow-lg rounded-lg p-6 space-y-4"
+          class="bg-white dark:bg-gray-700 shadow-xl rounded-lg p-8 space-y-5"
         >
+          <!-- Name -->
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Full Name *"
+            required
             class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
           />
+
+          <!-- Email -->
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Email Address *"
+            required
             class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
           />
+
+          <!-- Phone -->
+          <input
+            type="tel"
+            placeholder="Phone Number *"
+            required
+            class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
+          />
+
+          <!-- Country -->
+          <input
+            type="text"
+            placeholder="Your Country"
+            class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
+          />
+
+          <!-- Project Type -->
+          <select
+            class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
+          >
+            <option value="">Select Project Type</option>
+            <option value="web">Web Development</option>
+            <option value="mobile">Mobile App Development</option>
+            <option value="ai">AI / ML Integration</option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="research">Research Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+
+          <!-- Budget Range -->
+          <label class="block font-medium text-gray-700 dark:text-gray-300"
+            >Estimated Budget:</label
+          >
+          <select
+            class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
+          >
+            <option value="">Select Budget Range</option>
+            <option value="low">$100 - $500</option>
+            <option value="medium">$500 - $1,000</option>
+            <option value="high">$1,000 - $5,000</option>
+            <option value="custom">Above $5,000</option>
+          </select>
+
+          <!-- Deadline -->
+          <label class="block font-medium text-gray-700 dark:text-gray-300"
+            >Project Deadline:</label
+          >
+          <input
+            type="date"
+            class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
+          />
+
+          <!-- Services -->
+          <label class="block font-medium text-gray-700 dark:text-gray-300"
+            >Interested In:</label
+          >
+          <div class="flex flex-wrap gap-3">
+            <label class="flex items-center gap-2">
+              <input type="checkbox" /> Web Development
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" /> App Development
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" /> UI/UX Design
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" /> AI / ML
+            </label>
+          </div>
+
+          <!-- Message -->
           <textarea
             rows="4"
-            placeholder="Message"
+            placeholder="Your Message...*"
+            required
             class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
           ></textarea>
+
+          <!-- File Upload -->
+          <div>
+            <label
+              class="block mb-2 font-medium text-gray-700 dark:text-gray-300"
+              >Attach File (optional):</label
+            >
+            <input
+              type="file"
+              class="w-full border dark:border-gray-600 rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
+            />
+          </div>
+
+          <!-- Newsletter -->
+          <label class="flex items-center gap-2">
+            <input type="checkbox" />
+            <span>Subscribe to my newsletter</span>
+          </label>
+
+          <!-- Terms Agreement -->
+          <label class="flex items-center gap-2">
+            <input type="checkbox" required />
+            <span
+              >I agree to the
+              <a href="#" class="text-indigo-500">Terms & Conditions</a></span
+            >
+          </label>
+
+          <!-- Submit -->
           <button
             type="submit"
             class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 rounded-md"
           >
-            Send
+            Send Message
           </button>
         </form>
       </div>
@@ -394,6 +502,8 @@
     </footer>
 
     <script>
+
+      {% comment %} Toggoler {% endcomment %}
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
 
@@ -401,6 +511,7 @@
         mobileMenu.classList.toggle("hidden");
       });
 
+      {% comment %} Scroller {% endcomment %}
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
